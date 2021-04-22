@@ -89,14 +89,7 @@
 <p>this class is a template class. It has two Generic parameter. they are: <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> and <code data-dev-comment-type="typeparamref" class="typeparamref">K</code>.</p>
 <p>The extension method of this class can refer to <a class="xref" href="CatLibrary.ICatExtension.html">ICatExtension</a> class</p>
 </div>
-  <div class="markdown level0 conceptual">
-<p>This is a class talking about <a href="https://en.wikipedia.org/wiki/Cat">CAT</a>.</p>
-<blockquote>
-<p><strong>NOTE</strong>
-This is a CAT class</p>
-</blockquote>
-<p>Refer to <a class="xref" href="CatLibrary.IAnimal.html">IAnimal</a> to see other animals.</p>
-</div>
+  <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
@@ -158,7 +151,7 @@ public class Cat&lt;T, K&gt; : ICat, IAnimal where T : class, new()
     </tbody>
   </table>
   <h5 id="CatLibrary_Cat_2_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p><em>THIS</em> is remarks overridden in <em>MARKDWON</em> file</p>
+  <div class="markdown level0 remarks"><p>Here&apos;s all the content you can see in this class.</p>
 </div>
   <h5 id="CatLibrary_Cat_2_examples"><strong>Examples</strong></h5>
   <p>Here&apos;s example of how to create an instance of this class. As T is limited with <code>class</code> and K is limited with <code>struct</code>.</p>
@@ -392,12 +385,10 @@ public bool isHealthy</code></pre>
   
   
   <a id="CatLibrary_Cat_2_CalculateFood_" data-uid="CatLibrary.Cat`2.CalculateFood*"></a>
-  <h4 id="CatLibrary_Cat_2_CalculateFood_System_DateTime_" data-uid="CatLibrary.Cat`2.CalculateFood(System.DateTime)">Override CalculateFood Name</h4>
-  <div class="markdown level1 summary"><p>It's an overridden summary in <code>markdown</code> format</p>
+  <h4 id="CatLibrary_Cat_2_CalculateFood_System_DateTime_" data-uid="CatLibrary.Cat`2.CalculateFood(System.DateTime)">CalculateFood(DateTime)</h4>
+  <div class="markdown level1 summary"><p>It's a method with complex return type.</p>
 </div>
-  <div class="markdown level1 conceptual">
-<p>This is overriding methods. You can override parameter descriptions for methods, you can even add exceptions to methods. Check the intermediate <code>obj</code> folder to see the data model of the generated method/class. Override Yaml header should follow the data structure.</p>
-</div>
+  <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Dictionary&lt;string, List&lt;int&gt;&gt; CalculateFood(DateTime date)</code></pre>
@@ -415,7 +406,7 @@ public bool isHealthy</code></pre>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">date</span></td>
-        <td><p>This is overridden description for a parameter. <code>id</code> must be specified.</p>
+        <td><p>Date time to now.</p>
 </td>
       </tr>
     </tbody>
@@ -431,23 +422,7 @@ public bool isHealthy</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
-        <td><p>It's overridden description for return. <code>type</code> must be specified.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This is an <code>overridden</code> argument exception. you can add additional exception by adding different exception <code>type</code>.</p>
+        <td><p>It's a relationship map of different kind food.</p>
 </td>
       </tr>
     </tbody>
