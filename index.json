@@ -147,6 +147,6 @@
   "restapi/WaffarX.html": {
     "href": "restapi/WaffarX.html",
     "title": "WaffarX APIs | WaffarX Docs",
-    "keywords": "WaffarX APIs Advertiser AllAdvertisers Request GET /Advertiser/AllAdvertisers[?api-version] Parameters Name Type Value Notes api-version string 1.0 The requested API version Responses Status Code Description Samples 200 Success AllAdvertisers Request GET /api/v1/Advertiser/AllAdvertisers Responses Status Code Description Samples 200 Success"
+    "keywords": "WaffarX APIs Advertiser AllAdvertisers Request GET /Advertiser/AllAdvertisers[?api-version] Parameters Name Type Value Notes api-version string 1.0 The requested API version Responses Status Code Description Samples 200 Success"
   }
 }
