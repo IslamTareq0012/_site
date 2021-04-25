@@ -27,6 +27,6 @@
   "restapi/WaffarX.html": {
     "href": "restapi/WaffarX.html",
     "title": "WaffarX APIs | WaffarX Docs",
-    "keywords": "WaffarX APIs Advertiser AllAdvertisers Request GET /Advertiser/AllAdvertisers[?api-version] Parameters Name Type Value Notes api-version string 1.0 The requested API version Responses Status Code Description Samples 200 Success"
+    "keywords": "WaffarX APIs Advertiser AllAdvertisers Request GET /Advertiser/AllAdvertisers[?api-version] Parameters Name Type Value Notes api-version string 1.0 The requested API version Responses Status Code Description Samples 200 Success Mime type: application/json { \"value\": [ { \"errors\": [ \"string\" ], \"success\": true, \"data\": [ { \"id\": 0, \"stroeName\": \"string\", \"stroeNameAr\": \"string\", \"logo\": \"string\", \"isFlatPayout\": true, \"percentage\": 0, \"categories\": [ { \"id\": 0, \"name\": \"string\", \"nameAr\": \"string\" } ] } ] } ] }"
   }
 }
