@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/docs/docfx-seed-master",
+  "source_base_path": "D:/Docs/docfx-seed-master",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -26,26 +26,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/csharp_coding_standards.md",
+      "source_relative_path": "articles/Overview/Platform_Overview.md",
       "output": {
         ".html": {
-          "relative_path": "articles/csharp_coding_standards.html",
-          "hash": "sShvOjhzHPOBaoEunh0vkA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "articles/docfx_getting_started.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/docfx_getting_started.html",
-          "hash": "BdS2Z3hRV27QNsPyksmGDQ=="
+          "relative_path": "articles/Overview/Platform_Overview.html",
+          "hash": "zuZboa8rRcMNhEzz+CpkNg=="
         }
       },
       "is_incremental": false,
@@ -53,11 +38,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/engineering_guidelines.md",
+      "source_relative_path": "articles/Overview/why_WaffarX.md",
       "output": {
         ".html": {
-          "relative_path": "articles/engineering_guidelines.html",
-          "hash": "YIMHjiMhdx2T3tIOuJ9YGg=="
+          "relative_path": "articles/Overview/why_WaffarX.html",
+          "hash": "/+vTtsiSbQS91FvmUrnaTQ=="
         }
       },
       "is_incremental": false,
@@ -75,12 +60,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "articles/toc.md",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "q3nEGlk7BnLiks+R7rdGMA=="
+          "hash": "DNGwxdC/3v4cfB7iYAW9Gg=="
         }
       },
       "is_incremental": false,
@@ -128,7 +116,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "tjW3o7iZ/iZgLQHTejLKfA=="
+          "hash": "j8Na3fDEm/sZUIeyzDIOMg=="
         }
       },
       "is_incremental": false,
@@ -147,8 +135,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 5,
-          "skipped_file_count": 5
+          "total_file_count": 4,
+          "skipped_file_count": 4
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
