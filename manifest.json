@@ -60,15 +60,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "articles/toc.md",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "DNGwxdC/3v4cfB7iYAW9Gg=="
+          "hash": "52OmPdmE+G9n6aMkGnFQyQ=="
         }
       },
       "is_incremental": false,
