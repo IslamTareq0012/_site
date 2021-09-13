@@ -10,18 +10,18 @@ references:
 - uid: WaffarX APIs/1.0/AllAdvertisers
   name: AllAdvertisers
   href: restapi/WaffarX.html#WaffarX_APIs_1_0_AllAdvertisers
+- uid: WaffarX APIs/1.0/GetCashBackList
+  name: GetCashBackList
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetCashBackList
+- uid: WaffarX APIs/1.0/GetCashOutList
+  name: GetCashOutList
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetCashOutList
 - uid: WaffarX APIs/1.0/GetUserCashBack
   name: GetUserCashBack
   href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetUserCashBack
 - uid: WaffarX APIs/1.0/GetUserCashOut
   name: GetUserCashOut
   href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetUserCashOut
-- uid: WaffarX APIs/1.0/GetUsersCashBack
-  name: GetUsersCashBack
-  href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetUsersCashBack
-- uid: WaffarX APIs/1.0/GetUsersCashOuts
-  name: GetUsersCashOuts
-  href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetUsersCashOuts
 - uid: WaffarX APIs/1.0/Login
   name: Login
   href: restapi/WaffarX.html#WaffarX_APIs_1_0_Login

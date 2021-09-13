@@ -131,6 +131,32 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: [
+        {
+          &quot;tranID&quot;: 0,
+          &quot;statusName&quot;: &quot;string&quot;,
+          &quot;date&quot;: &quot;2021-09-12T17:42:05.924Z&quot;,
+          &quot;userToken&quot;: &quot;string&quot;,
+          &quot;advertiserName&quot;: &quot;string&quot;,
+          &quot;shoppingTripID&quot;: 0,
+          &quot;currency&quot;: &quot;string&quot;,
+          &quot;userConvertedValue&quot;: 0,
+          &quot;orderValue&quot;: 0
+        }
+      ]
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
@@ -187,6 +213,44 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: [
+        {
+          &quot;cashBacks&quot;: [
+            {
+              &quot;tranID&quot;: 0,
+              &quot;statusName&quot;: &quot;string&quot;,
+              &quot;date&quot;: &quot;2021-09-13T12:51:53.318Z&quot;,
+              &quot;userToken&quot;: &quot;string&quot;,
+              &quot;advertiserName&quot;: &quot;string&quot;,
+              &quot;shoppingTripID&quot;: 0,
+              &quot;currency&quot;: &quot;string&quot;,
+              &quot;userConvertedValue&quot;: 0,
+              &quot;orderValue&quot;: 0
+            }
+          ],
+          &quot;id&quot;: 0,
+          &quot;userToken&quot;: &quot;string&quot;,
+          &quot;status&quot;: &quot;string&quot;,
+          &quot;paymentCycleStartDate&quot;: &quot;2021-09-13T12:51:53.318Z&quot;,
+          &quot;paymentCycleEndDate&quot;: &quot;2021-09-13T12:51:53.318Z&quot;,
+          &quot;paymentCyclePayDate&quot;: &quot;2021-09-13T12:51:53.318Z&quot;,
+          &quot;paymentMethodName&quot;: &quot;string&quot;,
+          &quot;total&quot;: 0
+        }
+      ]
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
@@ -195,7 +259,7 @@
   
   
   
-   <h3 id="WaffarX_APIs_1_0_GetUsersCashBack" data-uid="WaffarX APIs/1.0/GetUsersCashBack" class="text-capitalize">GetUsersCashBack</h3>
+   <h3 id="WaffarX_APIs_1_0_GetCashBackList" data-uid="WaffarX APIs/1.0/GetCashBackList" class="text-capitalize">GetCashBackList</h3>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/v1/CashBack/GetCashBackList[?skip&amp;take&amp;Status&amp;IsCashed]</code></pre>
@@ -267,6 +331,40 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: {
+        &quot;usersCashBacks&quot;: [
+          {
+            &quot;tranID&quot;: 0,
+            &quot;statusName&quot;: &quot;string&quot;,
+            &quot;date&quot;: &quot;2021-09-13T12:53:19.596Z&quot;,
+            &quot;userToken&quot;: &quot;string&quot;,
+            &quot;advertiserName&quot;: &quot;string&quot;,
+            &quot;shoppingTripID&quot;: 0,
+            &quot;currency&quot;: &quot;string&quot;,
+            &quot;userConvertedValue&quot;: 0,
+            &quot;orderValue&quot;: 0
+          }
+        ],
+        &quot;meta&quot;: {
+          &quot;total&quot;: 0,
+          &quot;count&quot;: 0,
+          &quot;take&quot;: 0,
+          &quot;skip&quot;: 0
+        }
+      }
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
@@ -275,7 +373,7 @@
   
   
   
-   <h3 id="WaffarX_APIs_1_0_GetUsersCashOuts" data-uid="WaffarX APIs/1.0/GetUsersCashOuts" class="text-capitalize">GetUsersCashOuts</h3>
+   <h3 id="WaffarX_APIs_1_0_GetCashOutList" data-uid="WaffarX APIs/1.0/GetCashOutList" class="text-capitalize">GetCashOutList</h3>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/v1/CashBack/GetCashOutList[?skip&amp;take&amp;Status]</code></pre>
@@ -341,6 +439,52 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: {
+        &quot;usersCashOut&quot;: [
+          {
+            &quot;cashBacks&quot;: [
+              {
+                &quot;tranID&quot;: 0,
+                &quot;statusName&quot;: &quot;string&quot;,
+                &quot;date&quot;: &quot;2021-09-13T12:54:02.018Z&quot;,
+                &quot;userToken&quot;: &quot;string&quot;,
+                &quot;advertiserName&quot;: &quot;string&quot;,
+                &quot;shoppingTripID&quot;: 0,
+                &quot;currency&quot;: &quot;string&quot;,
+                &quot;userConvertedValue&quot;: 0,
+                &quot;orderValue&quot;: 0
+              }
+            ],
+            &quot;id&quot;: 0,
+            &quot;userToken&quot;: &quot;string&quot;,
+            &quot;status&quot;: &quot;string&quot;,
+            &quot;paymentCycleStartDate&quot;: &quot;2021-09-13T12:54:02.018Z&quot;,
+            &quot;paymentCycleEndDate&quot;: &quot;2021-09-13T12:54:02.018Z&quot;,
+            &quot;paymentCyclePayDate&quot;: &quot;2021-09-13T12:54:02.018Z&quot;,
+            &quot;paymentMethodName&quot;: &quot;string&quot;,
+            &quot;total&quot;: 0
+          }
+        ],
+        &quot;meta&quot;: {
+          &quot;total&quot;: 0,
+          &quot;count&quot;: 0,
+          &quot;take&quot;: 0,
+          &quot;skip&quot;: 0
+        }
+      }
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
@@ -410,6 +554,44 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: {
+        &quot;stores&quot;: [
+          {
+            &quot;id&quot;: 0,
+            &quot;stroeName&quot;: &quot;string&quot;,
+            &quot;stroeNameAr&quot;: &quot;string&quot;,
+            &quot;logo&quot;: &quot;string&quot;,
+            &quot;upToText&quot;: &quot;string&quot;,
+            &quot;upToTextAr&quot;: &quot;string&quot;,
+            &quot;advertiserCategories&quot;: [
+              {
+                &quot;id&quot;: 0,
+                &quot;categoryName&quot;: &quot;string&quot;,
+                &quot;categoryNameAr&quot;: &quot;string&quot;
+              }
+            ]
+          }
+        ],
+        &quot;meta&quot;: {
+          &quot;total&quot;: 0,
+          &quot;count&quot;: 0,
+          &quot;take&quot;: 0,
+          &quot;skip&quot;: 0
+        }
+      }
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
@@ -472,6 +654,85 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: {
+        &quot;id&quot;: 0,
+        &quot;advertisername&quot;: &quot;string&quot;,
+        &quot;advertisernameAr&quot;: &quot;string&quot;,
+        &quot;advertisernameNormalized&quot;: &quot;string&quot;,
+        &quot;waffarXLogo&quot;: &quot;string&quot;,
+        &quot;currency&quot;: &quot;string&quot;,
+        &quot;description&quot;: &quot;string&quot;,
+        &quot;descriptionAr&quot;: &quot;string&quot;,
+        &quot;coverImageURL&quot;: &quot;string&quot;,
+        &quot;cashbackTerms&quot;: &quot;string&quot;,
+        &quot;cashbackTermsAr&quot;: &quot;string&quot;,
+        &quot;shoppingSecrets&quot;: &quot;string&quot;,
+        &quot;shoppingSecretsAr&quot;: &quot;string&quot;,
+        &quot;cashBackOptions&quot;: [
+          {
+            &quot;id&quot;: 0,
+            &quot;advertiserID&quot;: 0,
+            &quot;description&quot;: &quot;string&quot;,
+            &quot;descriptionAr&quot;: &quot;string&quot;,
+            &quot;percentage&quot;: 0,
+            &quot;exitClickUrl&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;coupons&quot;: [
+          {
+            &quot;id&quot;: 0,
+            &quot;advertiserid&quot;: 0,
+            &quot;advertisername&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;string&quot;,
+            &quot;descriptionAr&quot;: &quot;string&quot;,
+            &quot;destination&quot;: &quot;string&quot;,
+            &quot;couponcode&quot;: &quot;string&quot;,
+            &quot;startDate&quot;: &quot;2021-09-13T12:59:01.475Z&quot;,
+            &quot;endDate&quot;: &quot;2021-09-13T12:59:01.475Z&quot;,
+            &quot;coupon&quot;: &quot;string&quot;,
+            &quot;upToText&quot;: &quot;string&quot;,
+            &quot;upToTextAr&quot;: &quot;string&quot;,
+            &quot;noteAr&quot;: &quot;string&quot;,
+            &quot;noteEn&quot;: &quot;string&quot;,
+            &quot;notes&quot;: [
+              &quot;string&quot;
+            ],
+            &quot;exitClickUrl&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;termsEn&quot;: &quot;string&quot;,
+        &quot;termsAr&quot;: &quot;string&quot;,
+        &quot;upToText&quot;: &quot;string&quot;,
+        &quot;upToTextAr&quot;: &quot;string&quot;,
+        &quot;advertiserShippingCountries&quot;: [
+          {
+            &quot;countryId&quot;: 0,
+            &quot;countryName&quot;: &quot;string&quot;,
+            &quot;flagLink&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;exitClickUrl&quot;: &quot;string&quot;,
+        &quot;advertiserCategories&quot;: [
+          {
+            &quot;id&quot;: 0,
+            &quot;categoryName&quot;: &quot;string&quot;,
+            &quot;categoryNameAr&quot;: &quot;string&quot;
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
@@ -513,7 +774,7 @@
       </tr>
       <tr>
         <td><span class="parametername">body</span></td>
-        <td></td>
+        <td>object</td>
         <td></td>
         <td></td>
       </tr>
@@ -535,6 +796,66 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: {
+        &quot;firstName&quot;: &quot;string&quot;,
+        &quot;lastName&quot;: &quot;string&quot;,
+        &quot;email&quot;: &quot;string&quot;,
+        &quot;phoneNumber&quot;: &quot;string&quot;,
+        &quot;userToken&quot;: &quot;string&quot;,
+        &quot;lifeTimeCashBack&quot;: 0,
+        &quot;loginUrl&quot;: &quot;string&quot;,
+        &quot;cashBacks&quot;: [
+          {
+            &quot;tranID&quot;: 0,
+            &quot;statusName&quot;: &quot;string&quot;,
+            &quot;date&quot;: &quot;2021-09-13T12:59:38.129Z&quot;,
+            &quot;userToken&quot;: &quot;string&quot;,
+            &quot;advertiserName&quot;: &quot;string&quot;,
+            &quot;shoppingTripID&quot;: 0,
+            &quot;currency&quot;: &quot;string&quot;,
+            &quot;userConvertedValue&quot;: 0,
+            &quot;orderValue&quot;: 0
+          }
+        ],
+        &quot;cashOuts&quot;: [
+          {
+            &quot;cashBacks&quot;: [
+              {
+                &quot;tranID&quot;: 0,
+                &quot;statusName&quot;: &quot;string&quot;,
+                &quot;date&quot;: &quot;2021-09-13T12:59:38.129Z&quot;,
+                &quot;userToken&quot;: &quot;string&quot;,
+                &quot;advertiserName&quot;: &quot;string&quot;,
+                &quot;shoppingTripID&quot;: 0,
+                &quot;currency&quot;: &quot;string&quot;,
+                &quot;userConvertedValue&quot;: 0,
+                &quot;orderValue&quot;: 0
+              }
+            ],
+            &quot;id&quot;: 0,
+            &quot;userToken&quot;: &quot;string&quot;,
+            &quot;status&quot;: &quot;string&quot;,
+            &quot;paymentCycleStartDate&quot;: &quot;2021-09-13T12:59:38.129Z&quot;,
+            &quot;paymentCycleEndDate&quot;: &quot;2021-09-13T12:59:38.129Z&quot;,
+            &quot;paymentCyclePayDate&quot;: &quot;2021-09-13T12:59:38.129Z&quot;,
+            &quot;paymentMethodName&quot;: &quot;string&quot;,
+            &quot;total&quot;: 0
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
@@ -591,6 +912,26 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: {
+        &quot;userToken&quot;: &quot;string&quot;,
+        &quot;loginUrl&quot;: &quot;string&quot;,
+        &quot;expireDate&quot;: &quot;2021-09-13T13:01:22.563Z&quot;,
+        &quot;isUsed&quot;: true,
+        &quot;cdate&quot;: &quot;2021-09-13T13:01:22.563Z&quot;
+      }
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
@@ -647,6 +988,66 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: {
+        &quot;firstName&quot;: &quot;string&quot;,
+        &quot;lastName&quot;: &quot;string&quot;,
+        &quot;email&quot;: &quot;string&quot;,
+        &quot;phoneNumber&quot;: &quot;string&quot;,
+        &quot;userToken&quot;: &quot;string&quot;,
+        &quot;lifeTimeCashBack&quot;: 0,
+        &quot;loginUrl&quot;: &quot;string&quot;,
+        &quot;cashBacks&quot;: [
+          {
+            &quot;tranID&quot;: 0,
+            &quot;statusName&quot;: &quot;string&quot;,
+            &quot;date&quot;: &quot;2021-09-13T13:02:31.316Z&quot;,
+            &quot;userToken&quot;: &quot;string&quot;,
+            &quot;advertiserName&quot;: &quot;string&quot;,
+            &quot;shoppingTripID&quot;: 0,
+            &quot;currency&quot;: &quot;string&quot;,
+            &quot;userConvertedValue&quot;: 0,
+            &quot;orderValue&quot;: 0
+          }
+        ],
+        &quot;cashOuts&quot;: [
+          {
+            &quot;cashBacks&quot;: [
+              {
+                &quot;tranID&quot;: 0,
+                &quot;statusName&quot;: &quot;string&quot;,
+                &quot;date&quot;: &quot;2021-09-13T13:02:31.316Z&quot;,
+                &quot;userToken&quot;: &quot;string&quot;,
+                &quot;advertiserName&quot;: &quot;string&quot;,
+                &quot;shoppingTripID&quot;: 0,
+                &quot;currency&quot;: &quot;string&quot;,
+                &quot;userConvertedValue&quot;: 0,
+                &quot;orderValue&quot;: 0
+              }
+            ],
+            &quot;id&quot;: 0,
+            &quot;userToken&quot;: &quot;string&quot;,
+            &quot;status&quot;: &quot;string&quot;,
+            &quot;paymentCycleStartDate&quot;: &quot;2021-09-13T13:02:31.316Z&quot;,
+            &quot;paymentCycleEndDate&quot;: &quot;2021-09-13T13:02:31.316Z&quot;,
+            &quot;paymentCyclePayDate&quot;: &quot;2021-09-13T13:02:31.316Z&quot;,
+            &quot;paymentMethodName&quot;: &quot;string&quot;,
+            &quot;total&quot;: 0
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
@@ -703,6 +1104,20 @@
         <td><p>Success</p>
 </td>
         <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: 0
+    }
+  ]
+}</code></pre>
         </td>
       </tr>
       </tbody>
