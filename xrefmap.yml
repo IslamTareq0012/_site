@@ -4,6 +4,33 @@ references:
 - uid: WaffarX APIs/1.0
   name: WaffarX APIs
   href: restapi/WaffarX.html
+- uid: WaffarX APIs/1.0/Advertiser
+  name: Advertiser
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_Advertiser
 - uid: WaffarX APIs/1.0/AllAdvertisers
   name: AllAdvertisers
   href: restapi/WaffarX.html#WaffarX_APIs_1_0_AllAdvertisers
+- uid: WaffarX APIs/1.0/GetUserCashBack
+  name: GetUserCashBack
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetUserCashBack
+- uid: WaffarX APIs/1.0/GetUserCashOut
+  name: GetUserCashOut
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetUserCashOut
+- uid: WaffarX APIs/1.0/GetUsersCashBack
+  name: GetUsersCashBack
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetUsersCashBack
+- uid: WaffarX APIs/1.0/GetUsersCashOuts
+  name: GetUsersCashOuts
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetUsersCashOuts
+- uid: WaffarX APIs/1.0/Login
+  name: Login
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_Login
+- uid: WaffarX APIs/1.0/Register
+  name: Register
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_Register
+- uid: WaffarX APIs/1.0/SignUp
+  name: SignUp
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_SignUp
+- uid: WaffarX APIs/1.0/UserDetails
+  name: UserDetails
+  href: restapi/WaffarX.html#WaffarX_APIs_1_0_UserDetails
