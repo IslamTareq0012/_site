@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>All Advertisers EndPoint | WaffarX Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="All Advertisers EndPoint | WaffarX Docs ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img style="width: 170px; margin-top: 5%;" id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="all-advertisers-endpoint">All Advertisers EndPoint</h2>
+
+<hr>
+<p>For stores data retrieval you can call api endpoint URL   <strong>/api/v1/Store/AllAdvertisers[?take&amp;skip]</strong>, using api keys obtained from auth step.</p>
+<pre><code class="lang-bash">curl --location --request GET 'https://api.waffarx.com/api/v1/store/AllAdvertisers?take=50&amp;skip=0' \
+--header 'Authorization: __Bearer Token__' \
+--header 'usertoken: __ User Token __ '
+</code></pre>
+<h2 id="paramertrs-details">Paramertrs Details</h2>
+<h3 id="headers">Headers</h3>
+<table>
+<thead>
+<tr>
+<th>Header</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Authentication</td>
+<td>Bearer Token</td>
+</tr>
+<tr>
+<td>UserToken</td>
+<td>[ User Token ]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reponse">Reponse</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Your responses may differ from those listed below on a case-by-case basis.</p>
+</div>
+<h3 id="reponse-object">Reponse Object</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Errors</td>
+<td>String</td>
+<td>Error Occurred</td>
+</tr>
+<tr>
+<td>Success</td>
+<td>Boolean</td>
+<td>Flag if request processed successfully</td>
+</tr>
+<tr>
+<td>data</td>
+<td>&lt; Stores List&gt;</td>
+<td>Stores List</td>
+</tr>
+</tbody>
+</table>
+<h3 id="store-object">Store Object</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Int</td>
+<td>Unique identifier for the store</td>
+</tr>
+<tr>
+<td>storeName</td>
+<td>String</td>
+<td>Name of store</td>
+</tr>
+<tr>
+<td>storeNameAr</td>
+<td>String</td>
+<td>English Name of Store</td>
+</tr>
+<tr>
+<td>logo</td>
+<td>String</td>
+<td>URL of store logo</td>
+</tr>
+<tr>
+<td>upToText</td>
+<td>String</td>
+<td>Cashback Upto Text</td>
+</tr>
+<tr>
+<td>upToTextAr</td>
+<td>String</td>
+<td>Arabic Cashback Upto Text</td>
+</tr>
+<tr>
+<td>advertiserCategories</td>
+<td>&lt; store Category object &gt;</td>
+<td>List with this online store category</td>
+</tr>
+<tr>
+<td>meta</td>
+<td>&lt; Response pagination meta data &gt;</td>
+<td>Data about current page/pagination info</td>
+</tr>
+</tbody>
+</table>
+<h3 id="category-object">Category object</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Int</td>
+<td>Unique identifier for the category</td>
+</tr>
+<tr>
+<td>categoryName</td>
+<td>String</td>
+<td>Name of this store category</td>
+</tr>
+<tr>
+<td>categoryNameAr</td>
+<td>String</td>
+<td>Arabic name of this store catgeory</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response-pagination-meta-object">Response pagination meta object</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>total</td>
+<td>Int</td>
+<td>Total Results</td>
+</tr>
+<tr>
+<td>cout</td>
+<td>Int</td>
+<td>Total Count in this page</td>
+</tr>
+<tr>
+<td>take</td>
+<td>Int</td>
+<td>Stores Taken</td>
+</tr>
+<tr>
+<td>skip</td>
+<td>Int</td>
+<td>Stores skipped</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<pre><code class="lang-json">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: {
+        &quot;stores&quot;: [
+          {
+            &quot;id&quot;: 0,
+            &quot;stroeName&quot;: &quot;string&quot;,
+            &quot;stroeNameAr&quot;: &quot;string&quot;,
+            &quot;logo&quot;: &quot;string&quot;,
+            &quot;upToText&quot;: &quot;string&quot;,
+            &quot;upToTextAr&quot;: &quot;string&quot;,
+            &quot;advertiserCategories&quot;: [
+              {
+                &quot;id&quot;: 0,
+                &quot;categoryName&quot;: &quot;string&quot;,
+                &quot;categoryNameAr&quot;: &quot;string&quot;
+              }
+            ]
+          }
+        ],
+        &quot;meta&quot;: {
+          &quot;total&quot;: 0,
+          &quot;count&quot;: 0,
+          &quot;take&quot;: 0,
+          &quot;skip&quot;: 0
+        }
+      }
+    }
+  ]
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -26,6 +26,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/Cashbacks/GetUserCashBack.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Cashbacks/GetUserCashBack.html",
+          "hash": "iVe5d9uMjLtDcjaNb7CtGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Cashbacks/GetuserCashout.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Cashbacks/GetuserCashout.html",
+          "hash": "spJyrDPsEiuBjKZOHB6ciw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/Overview/Platform_Overview.md",
       "output": {
         ".html": {
@@ -49,6 +73,78 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Stores/All_Advertisers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Stores/All_Advertisers.html",
+          "hash": "YtvO99rprMlXISnd1KypMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Stores/advertiser_details.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Stores/advertiser_details.html",
+          "hash": "3UjGkUA3js35cjHMzd6EhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/User/Register.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/User/Register.html",
+          "hash": "mwkCO50SZvm+AsnshZpo8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/User/login.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/User/login.html",
+          "hash": "2k9TgFb6tE+SCa2AZ2tK3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/User/signup.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/User/signup.html",
+          "hash": "EtxCGiCIjSdoJaKyI69uHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/User/userdetails.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/User/userdetails.html",
+          "hash": "LBweZ/rfrirZ6So3RAaYFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "articles/images/article1/seed.jpg",
       "output": {
@@ -65,7 +161,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "52OmPdmE+G9n6aMkGnFQyQ=="
+          "hash": "XHVN8oOX8sapN+p7cXXLfQ=="
         }
       },
       "is_incremental": false,
@@ -143,8 +239,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 4
+          "total_file_count": 12,
+          "skipped_file_count": 10
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
