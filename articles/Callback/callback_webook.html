@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Getting Started with WaffarX API | WaffarX Docs </title>
+    <title>Cashback Tracking Via Webhook Flow | WaffarX Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Getting Started with WaffarX API | WaffarX Docs ">
+    <meta name="title" content="Cashback Tracking Via Webhook Flow | WaffarX Docs ">
     <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,19 +77,108 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="getting-started-with-waffarx-api">Getting Started with <strong>WaffarX API</strong></h1>
+<h1 id="cashback-tracking-via-webhook-flow">Cashback Tracking Via Webhook Flow</h1>
 
 <hr>
-<p><img src="../images/article1/seed.jpg" alt="Seed"></p>
-<h2 id="company-overview">Company Overview</h2>
-<p>WaffarX allows you to enhance your user experience with cashback rewards. Working with WaffarX enables you to:</p>
-<ul>
-<li>Reduce the cost and time associated with integrating stores and cashout methods into your product.</li>
-<li>Focus on providing a seamless user experience with cashback rewards.</li>
-</ul>
-<h2 id="mission-statement">Mission Statement</h2>
-<p>We at WaffarX aim to cultivate an empowering shopping experience that would not be possible without cashback rewards. Our API provides the infrastructure necessary to build cashback solutions while we ensure that our integration is reliable, compliant, and secure to help applications and financial institutions interact smoothly and efficiently.
-Security is our utmost priority and we make sure that the privacy of any credentials passing through our system is never compromised. We have implemented our system using the highest level of industry-grade encryption, which protects credentials and sensitive information even if our data vault is breached.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Cashback must be tracked on the client server to defferntiate between new and updated cashback, if a new one inserted, the end user
+must recieve a notification include this information. But if a cashback is already exists it must be updated only.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<h3 id="what-is-the-cashback-tracking-via-webhook-flow-callback">What Is The Cashback Tracking Via Webhook Flow callback?</h3>
+<p>When a new cashback report is issued, a webhook request is initiated from our end to defined endpoints in your web app to send you
+with this report.</p>
+</div>
+<h2 id="transaction-processed-callback">Transaction Processed Callback</h2>
+<p>It's an URL for an endpoint in your web app, on which you'd receive cashback callbacks as a lists cotains user token and their cashback, you would receive a JSON object in POST request which contains a value by which you can know about users cashbacks such as the status of the cashback (Pending / Confirmed / Rejected / Closed), the exit click unique id for this shopping trip, cashback available for user to receive and other information related to user's transaction, here's a sample request similar to the one you should receive on your transaction processed callback endpoint.</p>
+<h3 id="example">Example</h3>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You will receive a list of this object.</p>
+</div>
+<pre><code class="lang-json">{
+  &quot;value&quot;: [
+    {
+      &quot;errors&quot;: [
+        &quot;string&quot;
+      ],
+      &quot;success&quot;: true,
+      &quot;data&quot;: [
+        {
+          &quot;tranID&quot;: 0,
+          &quot;statusName&quot;: &quot;string&quot;,
+          &quot;date&quot;: &quot;2021-09-12T17:42:05.924Z&quot;,
+          &quot;userToken&quot;: &quot;string&quot;,
+          &quot;advertiserName&quot;: &quot;string&quot;,
+          &quot;shoppingTripID&quot;: 0,
+          &quot;currency&quot;: &quot;string&quot;,
+          &quot;userConvertedValue&quot;: 0,
+          &quot;orderValue&quot;: 0
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<h3 id="cashback-object">Cashback object</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tranID</td>
+<td>int</td>
+<td>Cashback unique id</td>
+</tr>
+<tr>
+<td>statusName</td>
+<td>String</td>
+<td>Cashback status [Pending / Confirmed / Rejected / Closed ]</td>
+</tr>
+<tr>
+<td>date</td>
+<td>DateTime</td>
+<td>Date on which cashback is received.</td>
+</tr>
+<tr>
+<td>userToken</td>
+<td>String</td>
+<td>User token of the client app.</td>
+</tr>
+<tr>
+<td>advertiserName</td>
+<td>String</td>
+<td>Store name.</td>
+</tr>
+<tr>
+<td>shoppingTripID</td>
+<td>Int</td>
+<td>Exit click unique id for this shopping trip</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>String</td>
+<td>Cashback currency.</td>
+</tr>
+<tr>
+<td>userConvertedValue</td>
+<td>Decimal</td>
+<td>Cashback available for user to receive</td>
+</tr>
+<tr>
+<td>orderValue</td>
+<td>Decimal</td>
+<td>Purchase order value.</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

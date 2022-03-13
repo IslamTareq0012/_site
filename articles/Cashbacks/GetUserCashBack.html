@@ -80,12 +80,22 @@
 <h2 id="get-cashback-endpoint">Get cashback EndPoint</h2>
 
 <hr>
-<p>For stores data retrieval you can call api endpoint URL   <strong>/api/v1/Store/AllAdvertisers[?take&amp;skip]</strong>, using api keys obtained from auth step.</p>
-<pre><code class="lang-bash">curl --location --request GET 'https://api.waffarx.com/api/v1/store/AllAdvertisers?take=50&amp;skip=0' \
+<p>For cashback data retrieval, you can call api endpoint URL <strong>/api/v1/CashBack/GetUserCashBack</strong>, using api keys obtained from the auth step.</p>
+<pre><code class="lang-bash">curl --location --request GET 'https://api.waffarx.com/api/v1/CashBack/GetUserCashBack' \
 --header 'Authorization: __Bearer Token__' \
 --header 'usertoken: __ User Token __ '
+
 </code></pre>
-<h2 id="paramertrs-details">Paramertrs Details</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For list endpoint use this curl.</p>
+</div>
+<pre><code class="lang-bash">curl --location --request GET 'https://api.waffarx.com/api/v1/CashBack/GetCashBackList' \
+--header 'Authorization: __Bearer Token__' \
+--header 'usertoken: __ User Token __ '
+
+</code></pre>
+<h2 id="parameters-details">Parameters Details</h2>
 <h3 id="headers">Headers</h3>
 <table>
 <thead>
@@ -105,12 +115,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="reponse">Reponse</h2>
+<h2 id="response">Response</h2>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Your responses may differ from those listed below on a case-by-case basis.</p>
 </div>
-<h3 id="reponse-object">Reponse Object</h3>
+<h3 id="response-object">Response Object</h3>
 <table>
 <thead>
 <tr>
@@ -160,7 +170,7 @@
 <tr>
 <td>date</td>
 <td>DateTime</td>
-<td>Cashback date received at.</td>
+<td>Date on which cashback is received.</td>
 </tr>
 <tr>
 <td>userToken</td>
@@ -175,7 +185,7 @@
 <tr>
 <td>shoppingTripID</td>
 <td>Int</td>
-<td>Exit click unique id for this shopping trip/</td>
+<td>Exit click unique id for this shopping trip</td>
 </tr>
 <tr>
 <td>currency</td>
@@ -185,12 +195,12 @@
 <tr>
 <td>userConvertedValue</td>
 <td>Decimal</td>
-<td>User available cash to receive.</td>
+<td>Cashback available for user to receive</td>
 </tr>
 <tr>
 <td>orderValue</td>
 <td>Decimal</td>
-<td>Purchased order value.</td>
+<td>Purchase order value.</td>
 </tr>
 </tbody>
 </table>

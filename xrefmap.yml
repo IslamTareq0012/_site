@@ -22,9 +22,6 @@ references:
 - uid: WaffarX APIs/1.0/GetUserCashOut
   name: GetUserCashOut
   href: restapi/WaffarX.html#WaffarX_APIs_1_0_GetUserCashOut
-- uid: WaffarX APIs/1.0/Login
-  name: Login
-  href: restapi/WaffarX.html#WaffarX_APIs_1_0_Login
 - uid: WaffarX APIs/1.0/Register
   name: Register
   href: restapi/WaffarX.html#WaffarX_APIs_1_0_Register

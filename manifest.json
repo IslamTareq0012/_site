@@ -26,11 +26,185 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Sequence_Daiagrams/Fetching_cashback/Fetching_cashback.md",
+      "output": {
+        ".html": {
+          "relative_path": "Sequence_Daiagrams/Fetching_cashback/Fetching_cashback.html",
+          "hash": "J2VIO0yqI/2ikWMyruKX6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Sequence_Daiagrams/Fetching_cashbacks_API/Fetching_cashbacks_API.md",
+      "output": {
+        ".html": {
+          "relative_path": "Sequence_Daiagrams/Fetching_cashbacks_API/Fetching_cashbacks_API.html",
+          "hash": "6kOm/vEzK0lOv4aK7qlyYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Sequence_Daiagrams/Fetching_cashbacks_webhook/Fetching_cashbacks_webhook.md",
+      "output": {
+        ".html": {
+          "relative_path": "Sequence_Daiagrams/Fetching_cashbacks_webhook/Fetching_cashbacks_webhook.html",
+          "hash": "PyP0NfHP5MvkHxENe3pidQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Sequence_Daiagrams/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "Sequence_Daiagrams/Overview.html",
+          "hash": "mFbzq2bpqYbzBGdxAiTk0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Sequence_Daiagrams/Shopping_Scenario/shopping_scenario.md",
+      "output": {
+        ".html": {
+          "relative_path": "Sequence_Daiagrams/Shopping_Scenario/shopping_scenario.html",
+          "hash": "GXGndSsPq7VJ0ZkgYUz1Jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Sequence_Daiagrams/cashback_insertion/cashback_insertion.md",
+      "output": {
+        ".html": {
+          "relative_path": "Sequence_Daiagrams/cashback_insertion/cashback_insertion.html",
+          "hash": "lu7hjZJhH8A5Vevfl1CDtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Sequence_Daiagrams/images/API.JPG",
+      "output": {
+        "resource": {
+          "relative_path": "Sequence_Daiagrams/images/API.JPG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Sequence_Daiagrams/images/WEBHOOK.JPG",
+      "output": {
+        "resource": {
+          "relative_path": "Sequence_Daiagrams/images/WEBHOOK.JPG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Sequence_Daiagrams/images/cashback_insertion.JPG",
+      "output": {
+        "resource": {
+          "relative_path": "Sequence_Daiagrams/images/cashback_insertion.JPG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Sequence_Daiagrams/images/cashback_process.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Sequence_Daiagrams/images/cashback_process.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Sequence_Daiagrams/images/fetching_cashbacks.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Sequence_Daiagrams/images/fetching_cashbacks.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Sequence_Daiagrams/images/shopping_scenario.JPG",
+      "output": {
+        "resource": {
+          "relative_path": "Sequence_Daiagrams/images/shopping_scenario.JPG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Sequence_Daiagrams/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "Sequence_Daiagrams/toc.html",
+          "hash": "iWD4R6THFUDj7SBgf3vd3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Authentication/AuthenticationJWT.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Authentication/AuthenticationJWT.html",
+          "hash": "jkOPjftE/3sCE4XOVkqiAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Callback/callback_webook.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Callback/callback_webook.html",
+          "hash": "O86VtsQXgRlNcb5RHUBamg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/Cashbacks/GetUserCashBack.md",
       "output": {
         ".html": {
           "relative_path": "articles/Cashbacks/GetUserCashBack.html",
-          "hash": "iVe5d9uMjLtDcjaNb7CtGw=="
+          "hash": "x5X5jihdlQ3F70RRiuVsTg=="
         }
       },
       "is_incremental": false,
@@ -42,7 +216,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/Cashbacks/GetuserCashout.html",
-          "hash": "spJyrDPsEiuBjKZOHB6ciw=="
+          "hash": "IFaNnN4tfzElzc9aAN/9bQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/File_Sharing/Cashout_sftp.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/File_Sharing/Cashout_sftp.html",
+          "hash": "e3Z6n/kFNQ/Tel4p6nBQ4w=="
         }
       },
       "is_incremental": false,
@@ -54,7 +240,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Overview/Platform_Overview.html",
-          "hash": "wiQYv3hBWXyD8J9O2ChxIw=="
+          "hash": "3kHZqBl3wutp/fQbhptjfg=="
         }
       },
       "is_incremental": false,
@@ -66,7 +252,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Overview/why_WaffarX.html",
-          "hash": "Z5mQO+HIObNdjwRTt/Bauw=="
+          "hash": "GI08utytlLBLqQhdvXfCNw=="
         }
       },
       "is_incremental": false,
@@ -78,7 +264,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Stores/All_Advertisers.html",
-          "hash": "YtvO99rprMlXISnd1KypMA=="
+          "hash": "Z1Y+d2u9raQT1AH0fI91tw=="
         }
       },
       "is_incremental": false,
@@ -90,7 +276,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Stores/advertiser_details.html",
-          "hash": "3UjGkUA3js35cjHMzd6EhQ=="
+          "hash": "2zzt6gO7sEetQ6V2HBXaXA=="
         }
       },
       "is_incremental": false,
@@ -102,7 +288,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/User/Register.html",
-          "hash": "mwkCO50SZvm+AsnshZpo8g=="
+          "hash": "y80M1Ud+1/uUxCfPyz6EvQ=="
         }
       },
       "is_incremental": false,
@@ -114,7 +300,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/User/login.html",
-          "hash": "2k9TgFb6tE+SCa2AZ2tK3Q=="
+          "hash": "DYaf7bCUXpLJd9dgR7AawA=="
         }
       },
       "is_incremental": false,
@@ -126,7 +312,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/User/signup.html",
-          "hash": "EtxCGiCIjSdoJaKyI69uHw=="
+          "hash": "mf1Rb9UdjxVr2lN+ViPLLw=="
         }
       },
       "is_incremental": false,
@@ -138,7 +324,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/User/userdetails.html",
-          "hash": "LBweZ/rfrirZ6So3RAaYFw=="
+          "hash": "fpWRVMrc8wvfl/9DnIrDBA=="
         }
       },
       "is_incremental": false,
@@ -161,7 +347,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "XHVN8oOX8sapN+p7cXXLfQ=="
+          "hash": "DOinscptlLGAyVFibTjHZQ=="
         }
       },
       "is_incremental": false,
@@ -184,7 +370,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "+ZYmxMmtsT/X+L2AfWdvHA=="
+          "hash": "iabJUClL/NmUZ46lmHswYA=="
         }
       },
       "is_incremental": false,
@@ -196,7 +382,7 @@
       "output": {
         ".html": {
           "relative_path": "restapi/WaffarX.html",
-          "hash": "ERlRftdVCiQD+phEqpScxA=="
+          "hash": "aSLd9u2W6t9iwLF2gZkLcA=="
         }
       },
       "is_incremental": false,
@@ -220,7 +406,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "j8Na3fDEm/sZUIeyzDIOMg=="
+          "hash": "MRtg0bQCVawhB3t8VV3Y6Q=="
         }
       },
       "is_incremental": false,
@@ -230,17 +416,19 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 12,
-          "skipped_file_count": 10
+          "total_file_count": 21,
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

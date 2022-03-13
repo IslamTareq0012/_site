@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Getting Started with WaffarX API | WaffarX Docs </title>
+    <title>Sharing Cashout Data Using SFTP | WaffarX Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Getting Started with WaffarX API | WaffarX Docs ">
+    <meta name="title" content="Sharing Cashout Data Using SFTP | WaffarX Docs ">
     <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,19 +77,25 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="getting-started-with-waffarx-api">Getting Started with <strong>WaffarX API</strong></h1>
+<h1 id="sharing-cashout-data-using-sftp">Sharing Cashout Data Using SFTP</h1>
 
 <hr>
-<p><img src="../images/article1/seed.jpg" alt="Seed"></p>
-<h2 id="company-overview">Company Overview</h2>
-<p>WaffarX allows you to enhance your user experience with cashback rewards. Working with WaffarX enables you to:</p>
-<ul>
-<li>Reduce the cost and time associated with integrating stores and cashout methods into your product.</li>
-<li>Focus on providing a seamless user experience with cashback rewards.</li>
-</ul>
-<h2 id="mission-statement">Mission Statement</h2>
-<p>We at WaffarX aim to cultivate an empowering shopping experience that would not be possible without cashback rewards. Our API provides the infrastructure necessary to build cashback solutions while we ensure that our integration is reliable, compliant, and secure to help applications and financial institutions interact smoothly and efficiently.
-Security is our utmost priority and we make sure that the privacy of any credentials passing through our system is never compromised. We have implemented our system using the highest level of industry-grade encryption, which protects credentials and sensitive information even if our data vault is breached.</p>
+<!-- 
+> [!NOTE]
+> ### What is SFTP?
+> SFTP stands for Secure File Transfer Protocol. Secure File Transfer Protocol is a secure way to transfer the file via the internet.
+> While we have an FTP protocol to transfer the documents from one host to the next on the network, FTP safety was not a significant 
+> Problem.
+> To connect to a host to which a file is to be sent, the FTP protocol requires the password, but the password is in plain text, and a 
+> Threat to an attacker interception exists.
+> The intruder can use the password to misuse it. SFTP launched a secure channel for network transmission of the documents. SFTP is a 
+> Component of an SSH protocol (Secure Shell) that is actually a Unix program.
+> The SSH protocol creates a secure client-server connection, then SFTP works in the FTP-like manner, transferring the file to the 
+> Secured SSH channel.
+> SSH is a safe remote access protocol over unsustainable networks to a device.
+> For telnet, RSH, login, SSH is a substitute.
+> SFTP checks the identity of the customer and exchanges data once a secured link is formed. -->
+<p><strong>WaffarX Will Use SFTP for cashout data sharing, this data will include user token along with it's amount of cashout to be sent into his account. As WaffarX will obtain its SFTP credentials from the client, it will send the data based upon agreed time intervals, for example to be daily, weekly or monthly.</strong></p>
 </article>
           </div>
           

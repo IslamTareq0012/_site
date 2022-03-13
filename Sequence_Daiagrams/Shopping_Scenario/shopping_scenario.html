@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Getting Started with WaffarX API | WaffarX Docs </title>
+    <title>User Navigation Flow | WaffarX Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Getting Started with WaffarX API | WaffarX Docs ">
+    <meta name="title" content="User Navigation Flow | WaffarX Docs ">
     <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,19 +77,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="getting-started-with-waffarx-api">Getting Started with <strong>WaffarX API</strong></h1>
+<h1 id="user-navigation-flow">User Navigation Flow</h1>
 
 <hr>
-<p><img src="../images/article1/seed.jpg" alt="Seed"></p>
-<h2 id="company-overview">Company Overview</h2>
-<p>WaffarX allows you to enhance your user experience with cashback rewards. Working with WaffarX enables you to:</p>
-<ul>
-<li>Reduce the cost and time associated with integrating stores and cashout methods into your product.</li>
-<li>Focus on providing a seamless user experience with cashback rewards.</li>
-</ul>
-<h2 id="mission-statement">Mission Statement</h2>
-<p>We at WaffarX aim to cultivate an empowering shopping experience that would not be possible without cashback rewards. Our API provides the infrastructure necessary to build cashback solutions while we ensure that our integration is reliable, compliant, and secure to help applications and financial institutions interact smoothly and efficiently.
-Security is our utmost priority and we make sure that the privacy of any credentials passing through our system is never compromised. We have implemented our system using the highest level of industry-grade encryption, which protects credentials and sensitive information even if our data vault is breached.</p>
+<p><img src="../images/shopping_scenario.JPG" alt="shopping"></p>
+<p>As shown above, this diagram illustrates the flow of the end-user as they navigate the Cashback Rewards Interface via the Client Application.</p>
+<p><strong>&quot;Step 1 :&quot;</strong> User calls the stores page.</p>
+<p>User opens Client App, selects Cashback Rewards Section, All Stores.</p>
+<p><strong>&quot;Step 1.1:&quot;</strong> WaffarX Client Is Get Authenticated.</p>
+<p>Client is authenticated &amp; granted Authorization Token.</p>
+<p><strong>&quot;Step 1.1.1:&quot;</strong> Return Stores List.</p>
+<p>WAFFARX Server returns All Stores data.</p>
+<p><strong>&quot;Step 2:&quot;</strong> User request shopping trip for a store.</p>
+<p>User browses, requests Store Page, checks Cashback terms &amp; conditions, requests Shopping Trip.</p>
+<p><strong>&quot;Step 2.1:&quot;</strong> Send User Token.</p>
+<p>Client sends User Token for identification.</p>
+<p><strong>&quot;Step 2.1.1:&quot;</strong> Generate Store Link</p>
+<p>WAFFARX Server generates Redirection Link to requested store.</p>
+<p><strong>&quot;Step 2.1.2:&quot;</strong> Redirect Link To Requested Store</p>
+<p>WAFFARX Server returns Redirection Link to requested store.</p>
+<p><strong>&quot;Step 2.1.2.1:&quot;</strong> Chosen Merchant Landing Page
+User is redirected from Client App to requested store Landing Page.</p>
+<p><strong>&quot;Step 2.1.3:&quot;</strong> 401 Message (UNAUTHORIZED)
+Error message sent if the Authentication Token is not valid.</p>
 </article>
           </div>
           

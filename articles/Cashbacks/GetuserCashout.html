@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Get cashback EndPoint | WaffarX Docs </title>
+    <title>Get cashout EndPoint | WaffarX Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Get cashback EndPoint | WaffarX Docs ">
+    <meta name="title" content="Get cashout EndPoint | WaffarX Docs ">
     <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,15 +77,24 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="get-cashback-endpoint">Get cashback EndPoint</h2>
+<h2 id="get-cashout-endpoint">Get cashout EndPoint</h2>
 
 <hr>
-<p>For stores data retrieval you can call api endpoint URL   <strong>/api/v1/Store/AllAdvertisers[?take&amp;skip]</strong>, using api keys obtained from auth step.</p>
-<pre><code class="lang-bash">curl --location --request GET 'https://api.waffarx.com/api/v1/store/AllAdvertisers?take=50&amp;skip=0' \
+<p>For cashout data retrieval you can call api endpoint URL   <strong>/api/v1/CashBack/GetUserCashOut</strong>, using api keys obtained from auth step.</p>
+<pre><code class="lang-bash">curl --location --request GET 'https://api.waffarx.com/api/v1/CashBack/GetUserCashOut' \
+--header 'Authorization: __Bearer Token__' \
+--header 'usertoken: __ User Token __ '
+
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For list endpoint use this curl.</p>
+</div>
+<pre><code class="lang-bash">curl --location --request GET 'https://api.waffarx.com/api/v1/CashBack/GetCashOutList' \
 --header 'Authorization: __Bearer Token__' \
 --header 'usertoken: __ User Token __ '
 </code></pre>
-<h2 id="paramertrs-details">Paramertrs Details</h2>
+<h2 id="parameters-details">Parameters Details</h2>
 <h3 id="headers">Headers</h3>
 <table>
 <thead>
@@ -105,12 +114,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="reponse">Reponse</h2>
+<h2 id="response">Response</h2>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Your responses may differ from those listed below on a case-by-case basis.</p>
 </div>
-<h3 id="reponse-object">Reponse Object</h3>
+<h3 id="response-object">Response Object</h3>
 <table>
 <thead>
 <tr>
@@ -137,7 +146,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="cash-out-object">Cash out object</h3>
+<h3 id="cashout-object">Cashout object</h3>
 <table>
 <thead>
 <tr>
@@ -160,7 +169,7 @@
 <tr>
 <td>date</td>
 <td>DateTime</td>
-<td>Cashback date received at.</td>
+<td>Date on which cashback is received.</td>
 </tr>
 <tr>
 <td>userToken</td>
@@ -175,7 +184,7 @@
 <tr>
 <td>shoppingTripID</td>
 <td>Int</td>
-<td>Exit click unique id for this shopping trip/</td>
+<td>Exit click unique id for this shopping trip</td>
 </tr>
 <tr>
 <td>currency</td>
@@ -190,7 +199,7 @@
 <tr>
 <td>orderValue</td>
 <td>Decimal</td>
-<td>Purchased order value.</td>
+<td>Purchase order value.</td>
 </tr>
 </tbody>
 </table>
